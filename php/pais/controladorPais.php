@@ -13,7 +13,7 @@ switch ($_GET['accion']){
         break;
     case 'nuevo':
         $pais = new Pais();
-		$resultado = $Pais->nuevo($datos);
+		$resultado = $pais->nuevo($datos);
         if($resultado > 0) {
             $respuesta = array(
                 'respuesta' => 'correcto'

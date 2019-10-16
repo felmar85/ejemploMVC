@@ -97,6 +97,7 @@ class Pais extends ModeloAbstractoDB{
             foreach ($datos as $campo=>$valor):
                 $$campo = $valor;
             endforeach;
+            $pais_nomb= utf8_decode($pais_nomb);
             $this->query = "
             INSERT INTO tb_pais
             (pais_codi, pais_nomb, pais_capi)

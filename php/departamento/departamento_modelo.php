@@ -60,6 +60,7 @@
 				foreach ($datos as $campo=>$valor):
 					$$campo = $valor;
 				endforeach;
+				$depa_nomb= utf8_decode($depa_nomb);
 				$this->query = "
 				INSERT INTO tb_departamento
 				(depa_codi, depa_nomb, pais_codi)
